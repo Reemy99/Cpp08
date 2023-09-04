@@ -1,4 +1,20 @@
-# Vectors
+# containers
+
+**Sequence Containers:** are data structures that maintain the order of elements as they are inserted
+
+1. vector: a dynamic array that can grow or shrink in size.
+
+1. list: a doubly-linked list where elements can be inserted or removed at any position efficiently.
+
+
+**Associative Containers:** store data in a sorted order and allow for efficient lookup and retrieval of elements based on their keys.
+
+1. set: a container that stores unique elements in a sorted order.
+
+1. map: a container that stores key-value pairs in a sorted order based on keys.
+
+
+
 _____________________________________________
 
 In C++98, vectors are part of the Standard Template Library (STL) and are implemented as a dynamic array. They provide a convenient way to work with arrays of elements that can grow or shrink in size dynamically.
