@@ -1,4 +1,4 @@
-# containers
+# CONTAINERS
 
 **Sequence Containers:** are data structures that maintain the order of elements as they are inserted
 
@@ -16,6 +16,7 @@
 
 
 _____________________________________________
+## VECTORS
 
 In C++98, vectors are part of the Standard Template Library (STL) and are implemented as a dynamic array. They provide a convenient way to work with arrays of elements that can grow or shrink in size dynamically.
 
