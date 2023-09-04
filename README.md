@@ -57,4 +57,53 @@ To use vectors in your C++98 code, you need to include the <vector> header.
 
        myVector.pop_back();
 
+_____________________________________________
+## LISTS
+
+1) **Include the Header File:**
+
+           #include <list>
+
+2) **List Declaration and Initialization:**
+
+           std::list<int> myList; //Declare an empty list
+           std::list<int> myList = {1, 2, 3, 4, 5}; //Initialize a list with specific values:
+
+
+
+3) **Adding Elements:**
+
+        myList.push_back(6); //adds an element to the end of the list
+        myList.push_front(0); //adds an element to the beginning of the list:
+
+
+4) **Accessing Elements:** You can access elements in a list using iterators. list provides bidirectional iterators, allowing you to traverse the container in both directions.
+
+        std::list<int>::iterator it = myList.begin();
+        while (it != myList.end())
+        {
+            int element = *it;
+                    // Process the element
+            ++it;   // Move to the next element
+        }
+
+5) **Removing Elements:**
+
+        myList.pop_back(); // Remove the last element
+        myList.pop_front(); // Remove the first element
+
+
+6) **Inserting and Erasing Elements:** allows you to insert elements at a specific position using the insert method and remove elements at a specific position using the erase method.
+   
+        std::list<int>::iterator it = myList.begin();
+        ++it;                         // Move to the second element
+        myList.insert(it, 7);         // Insert 7 before the second element
+
+7) **List Size:**
+
+        int size = myList.size();
+
+
+
+
 
