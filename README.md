@@ -84,6 +84,7 @@ _____________________________________________
 
         int size = myList.size();
 
+__________________________________________________
 
-
+***std::distance*** is used to calculate the distance (number of elements) between two iterators. It calculates the distance between the beginning of the list (lst.begin()) and the iterator result, which points to the found element or the end of the list.
 
