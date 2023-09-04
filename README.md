@@ -24,12 +24,11 @@ _____________________________________________
 2) **Vector Declaration and Initialization:**
    
        std::vector<int> myVector; // Declare an empty vector
-       std::vector<int> myVector = {1, 2, 3, 4, 5}; // Initialize a vector with specific values:
+       std::vector<int> myVector = {1, 2, 3, 4, 5}; // Initialize a vector with specific values: (in C++11)
        std::vector<int> myVector(5); // Creates a vector with 5 elements, all initialized to 0
 4) **Adding Elements:**
 
        myVector.push_back(6); //add elements to the end of a vector
-
 5) **Accessing Elements:**
    
        int element = myVector[2]; // Access the third element (index 2)
@@ -37,7 +36,6 @@ _____________________________________________
 7) **Vector Size:**
 
        int size = myVector.size();
-
 8) **Iterating Over a Vector:**
   You can use loops to iterate over the elements of a vector:
 
@@ -59,16 +57,11 @@ _____________________________________________
 2) **List Declaration and Initialization:**
 
            std::list<int> myList; //Declare an empty list
-           std::list<int> myList = {1, 2, 3, 4, 5}; //Initialize a list with specific values:
-
-
-
+           std::list<int> myList = {1, 2, 3, 4, 5}; //Initialize a list with specific values:(in C++11)
 3) **Adding Elements:**
 
         myList.push_back(6); //adds an element to the end of the list
         myList.push_front(0); //adds an element to the beginning of the list:
-
-
 4) **Accessing Elements:** You can access elements in a list using iterators. list provides bidirectional iterators, allowing you to traverse the container in both directions.
 
         std::list<int>::iterator it = myList.begin();
@@ -78,23 +71,18 @@ _____________________________________________
                     // Process the element
             ++it;   // Move to the next element
         }
-
 5) **Removing Elements:**
 
         myList.pop_back(); // Remove the last element
         myList.pop_front(); // Remove the first element
-
-
 6) **Inserting and Erasing Elements:** allows you to insert elements at a specific position using the insert method and remove elements at a specific position using the erase method.
    
         std::list<int>::iterator it = myList.begin();
         ++it;                         // Move to the second element
         myList.insert(it, 7);         // Insert 7 before the second element
-
 7) **List Size:**
 
         int size = myList.size();
-
 
 
 
