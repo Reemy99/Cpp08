@@ -9,6 +9,8 @@
 
 **Associative Containers:** store data in a sorted order and allow for efficient lookup and retrieval of elements based on their keys.
 
+   ***You don’t have to handle associative containers in the exersices :)***
+
 1. set: a container that stores unique elements in a sorted order.
 
 1. map: a container that stores key-value pairs in a sorted order based on keys.
@@ -126,3 +128,14 @@ __________________________________________________
 It changes the control flow of the program and transfers execution to an appropriate catch block, allowing for error recovery and handling.
 It provides a structured way to handle and propagate errors in the program.
 
+
+***std::sort***n Is used to sort the elements of a vector (or any other random-access container) in ascending order. It is part of the C++ Standard Library's algorithms library and is implemented using the introsort algorithm.
+
+       std::vector<int> myVector = {5, 2, 4, 1, 3};
+       std::sort(myVextor.begin() , nyVector.end());
+       for (std::vector<int>::iterator it = myVector.begin(); it != myVector.end(); ++it)
+       {
+         std::cout << *it << " ";
+       }
+
+       OUTPUT = 1 2 3 4 5
