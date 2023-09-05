@@ -10,14 +10,15 @@
 #define WHITE   "\033[37m"
 #define RESET	"\033[0m"
 
-#include <iostream>
-#include <vector>
+#include <map>
 #include <list>
+#include <vector>
+#include <iostream>
 #include <algorithm>
 
 
 template <typename T>
-typename  T::iterator easyfind(T& container, int target)
+typename  T::iterator easyFind(T& container, int target)
 {
     typename T::iterator it = std::find(container.begin(), container.end(), target);
     if (it != container.end()) {
@@ -28,4 +29,5 @@ typename  T::iterator easyfind(T& container, int target)
     }
 
 }
+
 #endif
