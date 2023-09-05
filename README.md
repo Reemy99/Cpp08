@@ -119,5 +119,10 @@ _____________________________________________
         int size = myMap.size();
 __________________________________________________
 
-***std::distance*** is used to calculate the distance (number of elements) between two iterators. It calculates the distance between the beginning of the list (lst.begin()) and the iterator result, which points to the found element or the end of the list.
+***std::distance*** Is used to calculate the distance (number of elements) between two iterators. It calculates the distance between the beginning of the list (lst.begin()) and the iterator result, which points to the found element or the end of the list.
+
+
+***throw std::runtime_error:*** Is used to raise an exception that can be caught and handled in a different part of the program.
+It changes the control flow of the program and transfers execution to an appropriate catch block, allowing for error recovery and handling.
+It provides a structured way to handle and propagate errors in the program.
 
