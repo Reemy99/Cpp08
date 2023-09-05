@@ -132,7 +132,7 @@ It provides a structured way to handle and propagate errors in the program.
 ***std::sort***n Is used to sort the elements of a vector (or any other random-access container) in ascending order. It is part of the C++ Standard Library's algorithms library and is implemented using the introsort algorithm.
 
        std::vector<int> myVector = {5, 2, 4, 1, 3};
-       std::sort(myVextor.begin() , nyVector.end());
+       std::sort(myVector.begin() , myVector.end());
        for (std::vector<int>::iterator it = myVector.begin(); it != myVector.end(); ++it)
        {
          std::cout << *it << " ";
