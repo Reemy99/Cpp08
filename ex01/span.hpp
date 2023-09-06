@@ -17,9 +17,9 @@
 class Span
 {
 private:
-		unsigned int		_max;
-		std::vector<int>	_vec;
 public:
+		unsigned int		_N;
+	std::vector<int>	_vec;
     Span();
     Span(unsigned int n);
     Span(Span const &copy);

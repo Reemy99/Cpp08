@@ -2,10 +2,11 @@
 
 Span::Span()
 {}
-Span::Span(unsigned int n) : _max(n)
+Span::Span(unsigned int n) : _N(n)
 {
-    std::cout << "Vector size is : " << n << std::endl;
-    std::cout << "________________________" << std::endl;
+	_vec.reserve(_N);
+    std::cout << YELLOW << "Vector size is : " << n << RESET << std::endl;
+    std::cout << "=====================================" << std::endl;
 }
 Span::Span(Span const &copy)
 {
@@ -15,19 +16,20 @@ Span::~Span()
 {}
 void Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
 {
-	if (_vec.size() + std::distance(begin, end) > _max)
+	if (_vec.size() + std::distance(begin, end) > _N)
         throw ContainerMaxException();
 	_vec.insert(_vec.end(), begin, end);
 }
 	
 void Span::addNumber(int num)
 {
-    if (_vec.size() == this->_max)
+    if (_vec.size() == this->_N)
         throw ContainerMaxException();
     if (num < 0)
         throw std::runtime_error("Number is NEGATIVE");
     _vec.push_back(num);    
 }
+
 int Span::shortestSpan()
 {
     if (_vec.size() <= 1)
@@ -35,7 +37,7 @@ int Span::shortestSpan()
     std::sort(this->_vec.begin(), this->_vec.end());
     int min;
 	min = this->_vec[1] - this->_vec[0];
-	for (unsigned int i = 1; i < this->_vec.size() - 1; i++) // why - 1
+	for (unsigned int i = 1; i < this->_vec.size() - 1; i++)
 	{
 		if (this->_vec[i + 1] - this->_vec[i] < min)
 			min = this->_vec[i + 1] - this->_vec[i];
