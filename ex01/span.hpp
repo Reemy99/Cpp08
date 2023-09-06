@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <vector>
+#include <time.h>
 
 class Span
 {
@@ -27,7 +28,7 @@ public:
     int		shortestSpan();
     int		longestSpan();
     void addNumber(int number);
-    void addMoreNum(int size);
+    void addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 
     class	ContainerEmptyException : public std::exception
     {

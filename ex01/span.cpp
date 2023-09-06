@@ -13,6 +13,13 @@ Span::Span(Span const &copy)
 }
 Span::~Span()
 {}
+void Span::addNumber(std::vector<int>::iterator begin, std::vector<int>::iterator end)
+{
+	if (_vec.size() + std::distance(begin, end) > _max)
+        throw ContainerMaxException();
+	_vec.insert(_vec.end(), begin, end);
+}
+	
 void Span::addNumber(int num)
 {
     if (_vec.size() == this->_max)
@@ -46,12 +53,7 @@ int	Span::longestSpan()
 	longest = this->_vec.back()- this->_vec[0];
 	return(longest);
 }
-void	Span::addMoreNum(int amount)
-{
-	for (int i = 0; i < amount; i++){
-		this->_vec.insert(this->_vec.begin(), rand() % 100);
-	}
-}
+
 const char	*Span::ContainerMaxException::what() const throw() {
 	return("Container(Vector) Is Full");
 }
