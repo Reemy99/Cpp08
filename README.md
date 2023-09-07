@@ -9,7 +9,7 @@
 
 **Associative Containers:** store data in a sorted order and allow for efficient lookup and retrieval of elements based on their keys.
 
-   ***You don’t have to handle associative containers in the exersices :)***
+   ***You don’t have to handle associative containers in this Module :)***
 
 1. set: a container that stores unique elements in a sorted order.
 
