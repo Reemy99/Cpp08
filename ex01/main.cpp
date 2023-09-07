@@ -14,11 +14,11 @@ int main()
     	std::cout << "________________________" << std::endl;
 
 		std::srand(time(NULL));
-		Span sp2 = Span(10); 
+		Span sp2 = Span(10000); // vector size _N
 		std::vector<int> vec;
 
-		for (size_t i = 0; i < 10; i++){
-			int n = std::rand() % 10;
+		for (size_t i = 0; i < 10000; i++){
+			int n = std::rand() % 10000; // For different numbers
 			vec.push_back(n);
 		}
 		sp2.addNumber(vec.begin(), vec.end());

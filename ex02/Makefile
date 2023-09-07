@@ -1,6 +1,6 @@
 NAME = ex02
 
-FILES = main.cpp\
+FILES = main.cpp
 
 OBJ = $(FILES:.cpp=.o)
 
