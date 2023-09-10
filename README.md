@@ -14,10 +14,7 @@
 1. set: a container that stores unique elements in a sorted order.
 
 1. map: a container that stores key-value pairs in a sorted order based on keys.
-
-
-
-_____________________________________________
+2. _____________________________________________
 ## VECTORS
 
 1) **Include the Header File:**
@@ -48,7 +45,6 @@ _____________________________________________
     To remove elements from a vector, you can use the pop_back method to remove the last element:
 
        myVector.pop_back();
-
 _____________________________________________
 ## LISTS
 
@@ -85,42 +81,7 @@ _____________________________________________
 7) **List Size:**
 
         int size = myList.size();
-
-_____________________________________________
-## MAP
-1) **Include the Header File:**
-
-           #include <map>
-2) **Map Declaration and Initialization:**
-
-        std::map<int, std::string> myMap;                  //Declare an empty map
-        std::map<int, std::string> myMap = {{1, "Sting"}}; //with specific key-value pairs:
-3) Inserting Elements:
-
-        myMap.insert(std::make_pair(4, "David")); 
-        myMap[5] = "Eve";
-4) Accessing Elements:
-
-        std::string value = myMap[1]; // Access the value associated with key 1 (e.g., "string")
-5) Removing Elements:
-
-        myMap.erase(3); // Remove the key-value pair with key 3
-6) Iterating Over a Map:
-
-        std::map<int, std::string>::iterator it = myMap.begin();
-        while (it != myMap.end())
-        {
-            int key = it->first;
-            std::string value = it->second;
-                    // Process the key and value
-            ++it;        // Move to the next key-value pair
-        }
-
-7) Map Size:
-
-        int size = myMap.size();
-__________________________________________________
-
+____________________________________________
 ***std::distance*** Is used to calculate the distance (number of elements) between two iterators. It calculates the distance between the beginning of the list (lst.begin()) and the iterator result, which points to the found element or the end of the list.
 
 
